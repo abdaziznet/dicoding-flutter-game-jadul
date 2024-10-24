@@ -59,10 +59,7 @@ class DetailMobilePage extends StatelessWidget {
               child: Text(
                 game.title,
                 textAlign: TextAlign.center,
-                style: const TextStyle(
-                  fontSize: 30.0,
-                  fontFamily: 'Staatliches',
-                ),
+                style: const TextStyle(fontSize: 30.0),
               ),
             ),
             Container(
@@ -74,21 +71,21 @@ class DetailMobilePage extends StatelessWidget {
                     children: <Widget>[
                       const Icon(Icons.supervised_user_circle),
                       const SizedBox(height: 8.0),
-                      Text("Single Player"),
+                      Text(game.players),
                     ],
                   ),
                   Column(
                     children: <Widget>[
-                      const Icon(Icons.control_point_duplicate_rounded),
+                      const Icon(Icons.games),
                       const SizedBox(height: 8.0),
-                      Text("xbox controller"),
+                      Text("Playstation 1"),
                     ],
                   ),
                   Column(
                     children: <Widget>[
                       const Icon(Icons.monetization_on),
                       const SizedBox(height: 8.0),
-                      Text("Action"),
+                      Text(game.coverImage.price),
                     ],
                   ),
                 ],
@@ -115,7 +112,8 @@ class DetailMobilePage extends StatelessWidget {
                   },
                 ); // Add your button action here
               },
-              child: const Text('Play Now'),
+              child:
+                  const Text('Play Now', style: TextStyle(color: Colors.white)),
               style: ElevatedButton.styleFrom(
                 backgroundColor: Colors.blue,
                 padding: const EdgeInsets.symmetric(

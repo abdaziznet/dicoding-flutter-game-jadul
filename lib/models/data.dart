@@ -1,8 +1,8 @@
 class GameImage {
   String url;
-  String title;
+  String price;
 
-  GameImage(this.url, this.title);
+  GameImage(this.url, this.price);
 }
 
 class Game {
@@ -10,43 +10,43 @@ class Game {
   GameImage coverImage;
   // List<GameImage> images;
   String description;
-  String studio;
+  String players;
 
-  Game(this.title, this.coverImage, this.description, this.studio);
+  Game(this.title, this.coverImage, this.description, this.players);
 }
 
 List<Game> games = [
   Game(
-    "Horizon Zero Dawn",
+    "Harvest Moon",
     GameImage(
-        "https://www.wallpaperflare.com/static/734/272/885/horizon-zero-dawn-playstation-4-logo-aloy-horizon-zero-dawn-wallpaper.jpg",
-        ""),
-    "Spyro the Dragon is a platform game developed by Insomniac Games and published by Sony Computer Entertainment for the PlayStation on September 10, 1998. The first game in the Spyro series, it stars the title character, a young purple dragon named Spyro, and his dragonfly friend, Sparx, who must journey across the Dragon Kingdom in order to defeat Gnasty Gnorc (pronounced nas-tee nork), who has overtaken the 5 dragon Homeworlds ",
-    "Guerrilla Games",
+        "https://cdnpro.eraspace.com/media/mageplaza/blog/post/h/a/harvestmoon-primary.jpg",
+        "Free"),
+    "Get a chance to own a farm and experience a rural life in this fun farming simulation video game - Harvest Moon: Back to Nature.Harvest Moon: Back to Nature is a farming simulation video game that was released back in 1999 for the PlayStation 1 gaming console. The game features role-playing elements with both life simulation and dating simulation elements mixed in. The goal of the game is to increase the value of the farm and earn a lot of money during your stay on the farm to make the farm officially yours. Will you be able to gain enough money and build a solid relationship with the villagers",
+    "Single Player",
   ),
   Game(
-    "Metro Exodus",
+    "CTR",
     GameImage(
-        "https://assets1.ignimgs.com/2018/12/14/metro-exodus---button-1544750418985.jpg",
-        ""),
-    "",
-    "4A Games",
+        "https://image.api.playstation.com/cdn/UP0002/CUSA07402_00/5GJcmwHfNAJGmSfuK1FchewnevkEMFVWluBS4SKmmPA1oFxJYUq1wIUfnOcC3KAo.png",
+        "Free"),
+    "Crash Bandicoot: The Wrath of Cortex is a 2001 platform game developed by Traveller's Tales and published by Universal Interactive. It was first released for the PlayStation 2 and later ported to the Xbox, and GameCube, with Eurocom developing the GameCube version. It is the fourth main installment and the sixth overall in the Crash Bandicoot video game series, being the first of the series to not be released solely for a PlayStation console.",
+    "Multiplayer",
   ),
   Game(
-    "Tom Clancy's ",
+    "Teken 3",
     GameImage(
-        "https://cdn.division.zone/uploads/2019/03/tc-the-division-2-preload-start-times-sizes-header.jpg",
-        ""),
-    "",
-    "Massive Entertainment",
+        "https://assets-prd.ignimgs.com/2022/03/13/tekken3-1647189672174.jpg",
+        "Free"),
+    "Tekken 3 (鉄拳3) is a 1997 fighting video game, the third title in Namco's Tekken series, and the first game built on the Namco System 12 arcade hardware. Plotwise, the game takes place twenty years after Tekken 2 (1995) and features a largely new cast of characters, including the debut of several now-staple characters such as Jin Kazama, Ling Xiaoyu and Bryan Fury, and adds sidestepping ability to every character in-game. Tekken 3 was ported to the PlayStation in 1998 with additional content, including a beat 'em up mode called Tekken Force.",
+    "Multiplayer",
   ),
   Game(
-    "Resident Evil 2",
+    "Tony Hawk",
     GameImage(
-        "https://media.playstation.com/is/image/SCEA/resident-evil-2-box-art-01-ps4-us-12dec18?\$native_nt\$",
-        ""),
-    "",
-    "Capcom",
+        "https://assets-prd.ignimgs.com/2021/12/17/tony-hawk-prp-skater-2-1639763193495.jpg",
+        "Free"),
+    "Tony Hawk's Pro Skater 2 is a 2000 skateboarding video game developed by Neversoft for PlayStation, Vicarious Visions for Game Boy Advance, and Natsume for Game Boy Color. Published by Activision, it is the second installment in the Tony Hawk's series of sports games, and was released for the PlayStation in 2000, with subsequent ports to Windows and Dreamcast alongside a distinct version for Game Boy Color the same year. In 2001, the game was ported to Mac OS, Mac OS X, Nintendo 64, and Xbox (as part of Tony Hawk's Pro Skater 2x), alongside a separate version for Game Boy Advance. The game was later ported to Windows Mobile and Windows Phone devices in 2006 and to iPhone OS devices in 2010.",
+    "Single Player",
   ),
 ];
 
@@ -85,31 +85,31 @@ List<Game> games2 = [
 
 List<Game> featuredGames = [
   Game(
-    "Lyto: Seal Online",
+    "Spyro the Dragon",
     GameImage("https://www.ps1fun.com/thumbs/spyro-the-dragon.jpg", ""),
-    "",
-    "Seal Online Games",
+    "Spyro",
+    "Playstation 1",
   ),
   Game(
-    "Ragnarok Online",
-    GameImage(
-        "https://gamerwk.sgp1.cdn.digitaloceanspaces.com/2021/10/RO1.jpg", ""),
-    "",
-    "Ragnarok Online",
+    "NASCAR Thunder 2002",
+    GameImage("https://www.ps1fun.com/thumbs/NASCAR%20Thunder%202002.jpg", ""),
+    "NASCAR Thunder 2002",
+    "Playstation 1",
   ),
   Game(
-    "Gunbound: Massive Assault",
+    "Dragon Ball Z: Ultimate Battle 22",
     GameImage(
-        "https://cdn.idntimes.com/content-images/community/2018/02/maxresdefault-95fbd975b16fec62380c494850e9d775.jpg",
-        ""),
-    "",
-    "CyberConnect2",
+        "https://www.ps1fun.com/thumbs/Dragon_Ball_Z_-_Ultimate_Battle.jpg",
+        "Dragon Ball Z"),
+    "Dragon Ball Z",
+    "Playstation 1",
   ),
   Game(
-    "Mortal Kombat 11",
+    "Winning Eleven 3: Final Version",
     GameImage(
-        "https://static.trueachievements.com/customimages/093902.jpg", ""),
-    "",
-    "NetherRealm Studios",
+        "https://www.ps1fun.com/thumbs/World%20Soccer%20Jikkyou%20Winning%20Eleven%203%20-%20Final%20Ver.jpg",
+        "Winning Eleven 3"),
+    "Winning Eleven 3",
+    "Playstation 1",
   )
 ];
